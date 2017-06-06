@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <h3 class="card-header">Attract</h3>
+      <ul class="list-group list-group-flush">
+      <% @attract.each do |post| %>
+      	<li class="list-group-item"><%= link_to post.title, post %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <h3 class="card-header">Convert</h3>
+      <ul class="list-group list-group-flush">
+        <% @convert.each do |post| %>
+      	<li class="list-group-item"><%= link_to post.title, post %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <h3 class="card-header">Deliver</h3>
+      <ul class="list-group list-group-flush">
+        <% @deliver.each do |post| %>
+      	<li class="list-group-item"><%= link_to post.title, post %></li>
+      	<% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <h3 class="card-header">Scale</h3>
+      <ul class="list-group list-group-flush">
+        <% @scale.each do |post| %>
+      	<li class="list-group-item"><%= link_to post.title, post %></li>
+      	<% end %>
+      </ul>
+    </div>
+  </div>
+</div>
